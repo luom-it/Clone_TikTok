@@ -1,0 +1,21 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: #ff3b5c; /* Primary color */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.3;
+  text-rendering: optimizeSpeed; //hiển thị font chữ mượt mà hơn tối ưu nhanh nhất
+}

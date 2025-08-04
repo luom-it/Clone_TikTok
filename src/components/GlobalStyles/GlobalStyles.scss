@@ -2,11 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --color-black: #000;
   --color-primary: #ff3b5c; /* Primary color */
+
+  //text
+  --text-color: #161823;
+  --white-color: #fff;
+
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px; /* Default width for the layout */
+  --default-layout-horizontal-spacer: 24px; /* Default padding for the layout */
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -14,8 +25,62 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "TikTokFont", sans-serif;
   font-size: 1.6rem; /* 16px */
   line-height: 1.3;
   text-rendering: optimizeSpeed; //hiển thị font chữ mượt mà hơn tối ưu nhanh nhất
+}
+
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+//fonts emmbeded
+// @font-face {
+//   font-family: TikTokFont;
+//   src: url("../../assets/fonts/TikTokFont-Bold.woff2");
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: TikTokFont;
+//   src: url("../../assets/fonts/TikTokFont-Regular.woff2");
+//   font-weight: 600;
+// }
+// @font-face {
+//   font-family: TikTokFont;
+//   src: url("../../assets/TikTokFont-Regular.woff2");
+//   font-weight: 400;
+// }
+// @font-face {
+//   font-family: TikTokFont;
+//   src: url("../../assets/Poppins-Regular.ttf");
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: TikTokFont;
+//   src: url("../../assets/TikTokDisplayFont-Bold.woff2");
+//   font-weight: 700;
+// }
+
+//customer tippy tooltip
+
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3.3rem;
+    background-color: rgba(88, 84, 84, 0.92);
+  }
+  .tippy-content {
+    padding: 8px 9px;
+  }
 }

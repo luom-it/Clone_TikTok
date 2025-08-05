@@ -6,27 +6,28 @@ import Following from "../pages/Following";
 import Upload from "../pages/Upload";
 import Profile from "../pages/Profile";
 import Search from "../pages/Search";
+import routesConfig from "../config/routes";
 //chứa những routes không cần đăng nhập mà vẫn xem được
 const publicRoutes = [
   {
-    path: "/",
+    path: routesConfig.home,
     component: Home,
   },
   {
-    path: "/following",
+    path: routesConfig.following,
     component: Following,
   },
   {
-    path: "/:nickname",
+    path: routesConfig.profile,
     component: Profile,
   },
   {
-    path: "/upload",
+    path: routesConfig.upload,
     component: Upload,
     layout: HeaderOnly, // sử dụng HeaderOnly layout cho trang Upload
   },
   {
-    path: "/search",
+    path: routesConfig.search,
     component: Search,
   },
 ];

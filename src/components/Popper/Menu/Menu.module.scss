@@ -9,6 +9,12 @@
 
 .menu-popper {
   padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-body {
+  overflow-y: auto;
 }
 
 .menu-item {
@@ -31,6 +37,7 @@
   position: relative;
   height: 50px;
   top: -8px;
+  flex-shrink: 0;
 }
 .back-btn {
   width: 50px;

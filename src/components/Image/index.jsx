@@ -2,6 +2,8 @@ import { useState, forwardRef } from "react";
 import classNames from "classnames";
 import images from "../../assets/images/img_default.png";
 import styles from "./Image.module.scss";
+
+const cx = classNames.bind(styles);
 const Image = forwardRef(
   (
     { src, alt, className, fallback: customFallback = images, ...props },
@@ -16,7 +18,7 @@ const Image = forwardRef(
     };
     return (
       <img
-        className={classNames(styles.wrapper, className)}
+        className={cx("wrapper", className)}
         ref={ref}
         src={fallback || src}
         alt={alt}

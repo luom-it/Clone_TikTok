@@ -1,33 +1,33 @@
+import config from "../config";
 //Layout
-import { HeaderOnly } from "../components/layouts";
+import { HeaderOnly } from "../layouts";
 //pages
 import Home from "../pages/Home";
 import Following from "../pages/Following";
 import Upload from "../pages/Upload";
 import Profile from "../pages/Profile";
 import Search from "../pages/Search";
-import routesConfig from "../config/routes";
 //chứa những routes không cần đăng nhập mà vẫn xem được
 const publicRoutes = [
   {
-    path: routesConfig.home,
+    path: config.routes.home,
     component: Home,
   },
   {
-    path: routesConfig.following,
+    path: config.routes.following,
     component: Following,
   },
   {
-    path: routesConfig.profile,
+    path: config.routes.profile,
     component: Profile,
   },
   {
-    path: routesConfig.upload,
+    path: config.routes.upload,
     component: Upload,
     layout: HeaderOnly, // sử dụng HeaderOnly layout cho trang Upload
   },
   {
-    path: routesConfig.search,
+    path: config.routes.search,
     component: Search,
   },
 ];

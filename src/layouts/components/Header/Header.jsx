@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "tippy.js/dist/tippy.css"; // optional
 import { Link } from "react-router-dom";
 
-import Button from "../../../Button";
+import Button from "../../../components/Button";
 import styles from "./Header.module.scss";
 import classNames from "classnames/bind";
-import logo from "../../../../assets/images/TikTok_logo.svg";
+import logo from "../../../assets/images/TikTok_logo.svg";
 import {
   faCircleQuestion,
   faCoins,
@@ -19,11 +19,11 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { Message, Notification, UploadIcon } from "../../../Icons";
-import Image from "../../../Image";
+import { Message, Notification, UploadIcon } from "../../../components/Icons";
+import Image from "../../../components/Image";
 import Search from "../Search";
-import { Menu as Menu } from "../../../Popper";
-import routesConfig from "../../../../config/routes";
+import { Menu as Menu } from "../../../components/Popper";
+import config from "../../../config";
 
 const cx = classNames.bind(styles);
 
@@ -121,7 +121,7 @@ function Header() {
       <div className={cx("inner")}>
         {/* logo */}
 
-        <Link to={routesConfig.home} className={cx("logo-link")}>
+        <Link to={config.routes.home} className={cx("logo-link")}>
           <img height={42} width={118} src={logo} alt="logo" />
         </Link>
 

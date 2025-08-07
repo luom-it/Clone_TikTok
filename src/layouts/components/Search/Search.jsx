@@ -13,7 +13,6 @@ import {
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 
-import AccountItem from "../../../components/AccountItem";
 import { Wrapper as PopperWrapper } from "../../../components/Popper";
 import { useDebounce } from "../../../components/hooks";
 import RenderResult from "./RenderResult";
